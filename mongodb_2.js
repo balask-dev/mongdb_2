@@ -1,30 +1,38 @@
-
 USE zenclass
 
 db.users.insertMany([{
     id:1,
     name:"bala",
-    email:"bala@gmail.com"
+    email:"bala@gmail.com",
+    placement_apperence:"yes"
 },
 {
     id:12,
     name:"kaviya",
-    email:"kaviya@gmail.com"
+    email:"kaviya@gmail.com",
+    placement_apperence:"yes"
+
 },
 {
     id:3,
     name:"faiz",
-    email:"faiz@gmail.com"
+    email:"faiz@gmail.com",
+    placement_apperence:"yes"
+
 },
 {
     id:4,
     name:"arun",
-    email:"arun@gmail.com"
+    email:"arun@gmail.com",
+    placement_apperence:"yes"
+
 },
 {
     id:5,
     name:"abi",
-    email:"abi@gmail.com"
+    email:"abi@gmail.com",
+    placement_apperence:"yes"
+
 }
 ]);
 
@@ -245,9 +253,11 @@ QUERIES :
 
 > db.codekata.find().pretty()
 
+> db.users.find({placement_apperence:"yes"}).pretty()
+
 > db.tasks.find({"tasks":{"$exsits":true}}).pretty()
 
-> db.companyDrives.find({date:{$gt:ISODate(“2020-10-15”),$lt:ISODate(“2020-10-31”)}}).pretty()
+> db.companyDrives.find({date:{$gt:ISODate(“2020-10-15”),$lt:ISODate(“2020-10-31”)}})
 
 > db.topics.find({"topics":{"$exsits":true}}).pretty()
 
