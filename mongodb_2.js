@@ -1,4 +1,4 @@
-USE zenclass
+use zenclass
 
 db.users.insertMany([{
     id:1,
