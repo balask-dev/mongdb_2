@@ -173,7 +173,7 @@ db.tasks.insertMany([
     }
 ])
 
-db.insertMany.companyDrives([
+db.companydrives.insertMany([
     {
         company_name:"google",
         month:"dec",
@@ -257,7 +257,7 @@ QUERIES :
 
 > db.tasks.find({"tasks":{"$exsits":true}}).pretty()
 
-> db.companyDrives.find({date:{$gt:ISODate(“2020-10-15”),$lt:ISODate(“2020-10-31”)}})
+> db.companydrives.find({date:{$gt:ISODate(“2020-10-15”),$lt:ISODate(“2020-10-31”)}})
 
 > db.topics.find({"topics":{"$exsits":true}}).pretty()
 
